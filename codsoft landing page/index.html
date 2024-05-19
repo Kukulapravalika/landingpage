@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        
+        <a href="#"><img src="project images/logostar.png" class="logostar" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gift</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Pay</a></li>
+          <li><a href="#">Store</a></li>
+        </ul>
+        <form>
+          <div class="search">
+              <span class="search-icon material-symbols-outlined"> search </span>
+              <input class="search-input" type="search" placeholder="Looking for something specific!"  size="50">
+          </div>
+      </form>  
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <h2>It's not just coffee <br />It's <span>starbucks </span></h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+            rerum velit explicabo, neque ad tempora dolores saepe sunt magni
+            totam adipisci nihil molestiae dolore voluptate possimus! Ex aut
+            ipsum saepe.
+          </p>
+          <br />
+          <a href="#">Learn more</a>
+        </div>
+        <div class="imgbox">
+          <img src="project images/pinkdrink.png" alt=" " class="starbucks" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="project images/pinkdrink.png" onclick="imgSlider('project images/pinkdrink.png');changecirclecolor('#7d2254')"/></li>
+        <li><img src="project images/light.png"     onclick="imgSlider('project images/light.png');changecirclecolor('#e099df')"/></li>
+        <li><img src="project images/test1.png"    onclick="imgSlider('project images/test1.png');changecirclecolor('#5c2b11')"/></li>
+      </ul>
+      
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.starbucks').src = anything;
+      }
+      function changecirclecolor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
